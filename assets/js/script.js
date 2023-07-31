@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to filter products based on search keywords
     const filterProductsBySearch = (searchTerm) => {
-      const regex = new RegExp(searchTerm, 'b'); // 'i' flag for case-insensitive search
+      const regex = new RegExp(searchTerm, 'i'); // 'i' flag for case-insensitive search
       allProducts.forEach((product) => {
         const productTitle = product.querySelector('p').textContent;
         if (productTitle.match(regex)) {
