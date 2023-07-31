@@ -5,7 +5,7 @@
 // ==================================
 document.addEventListener('DOMContentLoaded', function () {
   const hamburgerButton = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.line');
+  const navLinks = document.querySelector('.link');
 
   hamburgerButton.addEventListener('click', function () {
     navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
